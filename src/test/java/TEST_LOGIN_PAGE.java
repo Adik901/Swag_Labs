@@ -23,7 +23,6 @@ public class TEST_LOGIN_PAGE {
         driver.get("https://www.saucedemo.com/");
         LOGINPAGE = new LOGIN_PAGE(driver);
     }
-
     @Test
     public void SignInPass() {
       LOGIN_PAGE loginpage = LOGINPAGE.ToSignIn("standard_user","secret_sauce");
